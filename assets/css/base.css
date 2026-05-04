@@ -1,7 +1,6 @@
 :root { /* Why are you here */
   --text-color: #6e01d2;
   --warning-color: #AC0000;
-  --site-version: "V: b0.1.1";
 }
 
 html, body {
