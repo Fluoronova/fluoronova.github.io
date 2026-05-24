@@ -30,7 +30,7 @@
 }
 
 .main-page-content a {
-    color: var(--text-color);
+  color: var(--text-color);
   text-decoration: underline;
   font-weight: bold;
   transition: opacity 0.3s ease, filter 0.3s ease;
@@ -39,4 +39,37 @@
 .main-page-content a:hover {
   opacity: 0.75;
   filter: brightness(0.25);
+}
+
+.latest-videos {
+  margin-top: 3rem;
+}
+
+.latest-videos h2 {
+  margin-bottom: 1.5rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.video-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(20, 20, 20, 0.6);
+  border: 2px solid rgba(120, 0, 255, 0.25);
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+}
+.video-card iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  display: block;
 }

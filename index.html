@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/assets/css/base.css">
   <link rel="stylesheet" href="/assets/css/home.css">
   <script src="/assets/js/base.js" defer></script>
+  <script src="/assets/js/home.js" defer></script>
 </head>
 <body>
 
@@ -49,28 +50,33 @@
   </div>
 </header>
 
-
+<!-- Reminder to me that I have to think of a good design for 1.0.0 -->
 
 <main class="main-page">
   <div class="main-page-content">
     <img
-     src="https://github.com/fluoronova.png" class="border-image" alt="Profile Picture"
-     onerror="this.onerror=null; this.src='/assets/images/placeholder.png'"
+      src="https://github.com/fluoronova.png" class="border-image" alt="Profile Picture"
+      onerror="this.onerror=null; this.src='/assets/images/placeholder.png'"
     />
     <h2>Hi, I'm Fluoronova, a Roblox Developer, Website Developer, and the Owner of <a href="https://www.roblox.com/communities/481070910/MetalHeart-Studios#!/about" target="_blank">MetalHeart Studios on Roblox.</a></h2>
     <p style="color: var(--warning-color);">Note: this site is going to have a big style change when I have the time to do it.</p>
 
-    <noscript style="color: var(--warning-color);"><br><i><strong>Some things (such as image fallback and version display) requires javascript. It's not needed for this site to function, but I recommend you turn it on.</strong></i></noscript>
-    <div style="background-color: rgba(60, 0, 105, 0.75); width: 15%; height: 2.5px; margin: 2rem auto;"> </div>
+    <noscript style="color: var(--warning-color);"><br><i><strong>Many features of this site (such as image fallback, version display, and Youtube embeds) need JavaScript to function.</strong></i></noscript>
+    <div class="page-divider"></div>
     <p>
       I mainly program, and sometimes design UI. 
       Due to me preferring programming since late 2022, (as that's when I started) I can confidently program in Python, Lua/Luau, JavaScript, and a little of C+. <br> <br>
       Me and <a href="https://www.roblox.com/users/4875997048/profile" target="_blank">@PyrockZen</a> both equally own an upcoming Roblox game called "False Penance."
       I am a <strong>Core Programmer, Game Optimiser, Project Manager / Shared Owner, Game/Level Designer,</strong> a <strong>Concept Artist,</strong> and an <strong>Advertiser.</strong>
-      You can find news and updates of it on my Roblox Talent Hub, YouTube, Twitter, and TikTok, all of which are linked socials on the header. (except Spotify, Spotify is there as it'll be a link to our game's OST in the future.)
+      You can find news and updates of it on my Roblox Talent Hub, YouTube, Twitter, and TikTok, all of which are linked socials on the header.</p> <!-- (except Spotify, Spotify is there as it'll be a link to our game's OST in the future.) -->
     </p>
-    <div style="background-color: rgba(60, 0, 105, 0.75); width: 15%; height: 2.5px; margin: 2rem auto;"> </div>
-    <h3>You can view my recent projects <a href="/projects/">here.</a> This system will be eventually reworked.</h3> <!-- I still don't know when -->
+    <div class="page-divider"></div>
+    <section class="latest-videos">
+      <h2>My latest videos are below:</h2>
+      <div class="video-grid" id="latestVideos"></div>
+      <div class="page-divider"></div>
+      <p class="video-note" style="color: var(--warning-color)">Again, this system that I made won't be the final implementation, so give me a bit of time.</p>
+    </section>
   </div>
 </main>
 
