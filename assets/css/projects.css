@@ -47,4 +47,9 @@
 .game-images img {
   width: 160px;
   height: auto;
+  transition: transform 0.25s ease;
+}
+
+.game-images img:hover {
+  transform: scale(1.1);
 }
