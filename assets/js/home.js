@@ -3,8 +3,6 @@ const videoIds = [
     "QpHAebuGJl0",
     "QpHAebuGJl0",
     "QpHAebuGJl0",
-    "QpHAebuGJl0",
-    "QpHAebuGJl0",
 ];
 
 latestVideos.innerHTML = "";
