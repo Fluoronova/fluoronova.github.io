@@ -32,8 +32,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(60, 0, 105, 0.3);
+  background: linear-gradient(-135deg, rgba(0,0,0, 0.75), rgba(15, 0, 30, 0.75), rgba(0,0,0, 0.75));
   border: 0.25rem solid rgba(55, 0, 100, 0.3);
+  border-left: none;
+  border-right: none;
   backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
@@ -42,21 +44,21 @@ header {
   z-index: 1001;
 }
 
-nav {
+header nav {
   display: flex;
   gap: 20px;
   flex: 1;
   padding-right: 0.5rem;
 }
 
-nav a {
+header nav a {
   color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
   transition: opacity 0.25s ease, filter 0.25s ease;
 }
 
-nav a:hover {
+header nav a:hover {
   opacity: 0.75;
   filter: brightness(0.25);
 }
@@ -80,6 +82,70 @@ nav a:hover {
 .social img:hover {
   transform: scale(1.1);
   filter: brightness(0.98);
+}
+
+footer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0, 0.75), rgba(15, 0, 30, 0.75), rgba(0,0,0, 0.75));
+  border: 0.25rem solid rgba(55, 0, 100, 0.3);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1.25rem;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+footer .site-title h1 {
+  padding: 0;
+  margin: 0;
+}
+
+footer .site-title p {
+  padding: 0;
+  margin: 0;
+}
+
+footer nav {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  padding-right: 0.5rem;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+footer a:hover {
+  opacity: 0.75;
+  filter: brightness(0.25);
+}
+
+footer a .external-site-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    vertical-align: middle;
+    background: currentColor;
+    -webkit-mask: url("/assets/images/icons/externalLink.svg") center / contain no-repeat;
+    mask: url("/assets/images/icons/externalLink.svg") center / contain no-repeat;
+}
+
+.site-title h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .border-image{
@@ -117,6 +183,17 @@ nav a:hover {
   padding: 0;
   margin: 0;
 }
+
+.commit-label {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  opacity: 0.75;
+  padding: 0;
+  margin: 0;
+}
+
 .page-divider{
   background-color: rgba(60, 0, 105, 0.75); 
   width: 15%; 
@@ -124,10 +201,8 @@ nav a:hover {
   margin: 2rem auto
 }
 
-/* I'll change this up for V1.0.0, and since it does not need to be used I'll just comment it out
-
 .loading-screen {
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   width: 100%;
   height: 100vh;
@@ -135,8 +210,8 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
-  transition: opacity ease 0.1s;
+  opacity: 1;
+  transition: opacity ease 0.5s;
 }
 
 
@@ -152,5 +227,3 @@ nav a:hover {
   66%  { content: ".."; }
   100% { content: "..."; }
 }
-
-*/
