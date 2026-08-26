@@ -1,0 +1,55 @@
+.projects-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6rem 1rem 2rem;
+}
+
+.projects-page-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects-page-content h2 {
+  margin: 0 0 0.5rem;
+}
+
+.projects-page-content img {
+  margin: 0 0 1rem;
+}
+
+.projects-page-content p {
+  margin: 0 0 1.5rem;
+}
+
+.projects-page-content a {
+    color: var(--text-color);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.projects-page-content a:hover {
+  opacity: 0.75;
+  filter: brightness(0.25);
+}
+
+.game-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.game-images img {
+  width: 160px;
+  height: auto;
+  transition: transform 0.25s ease;
+}
+
+.game-images img:hover {
+  transform: scale(1.1);
+}

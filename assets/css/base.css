@@ -1,0 +1,229 @@
+:root { /* Why are you here */
+  --text-color: #6e01d2;
+  --warning-color: #AC0000;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@keyframes drift {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px;
+  }
+}
+
+body {
+  background-color: #000;
+  background-image: url('/assets/images/BackgroundLol.webp');
+  background-repeat: repeat;
+  background-size: auto 15px;
+  animation: drift 20s linear infinite;
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(-135deg, rgba(0,0,0, 0.75), rgba(15, 0, 30, 0.75), rgba(0,0,0, 0.75));
+  border: 0.25rem solid rgba(55, 0, 100, 0.3);
+  border-left: none;
+  border-right: none;
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  box-sizing: border-box;
+  z-index: 1001;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  padding-right: 0.5rem;
+}
+
+header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+header nav a:hover {
+  opacity: 0.75;
+  filter: brightness(0.25);
+}
+
+.social {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  padding-left: 0.5rem;
+}
+
+.social img {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform .25s, filter .25s
+}
+
+.social img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.98);
+}
+
+footer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0,0,0, 0.75), rgba(15, 0, 30, 0.75), rgba(0,0,0, 0.75));
+  border: 0.25rem solid rgba(55, 0, 100, 0.3);
+  border-left: none;
+  border-right: none;
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 1.25rem;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+footer .site-title h1 {
+  padding: 0;
+  margin: 0;
+}
+
+footer .site-title p {
+  padding: 0;
+  margin: 0;
+}
+
+footer nav {
+  display: flex;
+  gap: 20px;
+  flex: 1;
+  padding-right: 0.5rem;
+}
+
+footer a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.25s ease, filter 0.25s ease;
+}
+
+footer a:hover {
+  opacity: 0.75;
+  filter: brightness(0.25);
+}
+
+footer a .external-site-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.25em;
+    vertical-align: middle;
+    background: currentColor;
+    -webkit-mask: url("/assets/images/icons/externalLink.svg") center / contain no-repeat;
+    mask: url("/assets/images/icons/externalLink.svg") center / contain no-repeat;
+}
+
+.site-title h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.border-image{
+  border: 0.25rem solid rgba(55, 0, 100, 0.3);
+  margin: 2rem auto;
+  backdrop-filter: blur(2px);
+  width: 15%;
+  border-radius: 100%;
+}
+
+.site-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.site-title h1 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.version-label {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  opacity: 0.75;
+  padding: 0;
+  margin: 0;
+}
+
+.commit-label {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-color);
+  opacity: 0.75;
+  padding: 0;
+  margin: 0;
+}
+
+.page-divider{
+  background-color: rgba(60, 0, 105, 0.75); 
+  width: 15%; 
+  height: 2.5px; 
+  margin: 2rem auto
+}
+
+.loading-screen {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, rgb(0,0,0), rgb(21, 0, 34));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity ease 0.5s;
+}
+
+
+
+.dots::after {
+  content: "";
+  animation: dots 1s steps(3, end) infinite;
+}
+
+@keyframes dots {
+  0%   { content: ""; }
+  33%  { content: "."; }
+  66%  { content: ".."; }
+  100% { content: "..."; }
+}

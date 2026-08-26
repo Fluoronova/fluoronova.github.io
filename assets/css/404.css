@@ -1,0 +1,42 @@
+.I404-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6rem 1rem 2rem;
+}
+
+.I404-page-content {
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+
+.I404-page-content h2 {
+  margin: 0 0 0.5rem;
+}
+
+.I404-page-content h3 {
+  margin: 0 0 0.5rem;
+}
+
+.I404-page-content img {
+  margin: 0 0 1rem;
+}
+
+.I404-page-content p {
+  margin: 0 0 1.5rem;
+}
+
+.I404-page-content a {
+    color: var(--text-color);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.I404-page-content a:hover {
+  opacity: 0.75;
+  filter: brightness(0.25);
+}

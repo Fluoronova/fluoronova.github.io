@@ -1,0 +1,48 @@
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 6rem 1rem 2rem;
+}
+
+.contact-card {
+  max-width: 1200px;
+  width: 100%;
+  /* background-color: rgba(60, 0, 105, 0.3); */
+  /* backdrop-filter: blur(2px); */
+  /* border: 0.25rem solid rgba(55 0, 100, 0.3); */
+  padding: 2rem;
+  /* border-radius: 15px; */
+  text-align: center;
+}
+
+.contact-card h2 {
+  margin: 0 0 0.5rem;
+}
+
+.contact-card p {
+  margin: 0 0 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin: 0.5rem 0;
+}
+
+.contact-list a {
+  color: var(--text-color);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+}
+
+.contact-list a:hover {
+  opacity: 0.75;
+  filter: brightness(0.25);
+}
